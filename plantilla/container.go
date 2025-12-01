@@ -42,6 +42,12 @@ export class {{.ComponentName | title }}Container implements OnInit {
   ngOnInit(): void {
   }
 
+	onEdit(item: any) {}
+
+  onDelete(id: string) {}
+
+  changeParams(params: any) {}
+
 }
 `
 
