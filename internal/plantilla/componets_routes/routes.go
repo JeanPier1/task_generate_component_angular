@@ -1,4 +1,4 @@
-package plantilla
+package componets_routes
 
 const TemplateContentWithDynamicRoutes = `
 import { Route } from '@angular/router';

@@ -1,4 +1,4 @@
-package plantilla
+package componets_routes
 
 const TemplateContenttWithDynamicContainerComponent = `
 import { Component, OnInit, inject } from '@angular/core';
@@ -51,8 +51,7 @@ export class {{.ComponentName | title }}Container implements OnInit {
 }
 `
 
-const TemplateContenttWithDynamicContainerHtml = `
-<div>
+const TemplateContenttWithDynamicContainerHtml = `<div>
   <lib-ui-breadcrumb [items]="items"></lib-ui-breadcrumb>
   <p-card class="!card-no-padding-top bg-white!">
     <p class="text-2xl font-semibold flex items-center">

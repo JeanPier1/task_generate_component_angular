@@ -1,4 +1,4 @@
-package plantilla
+package componets_routes
 
 const TemplateContenttWithDynamicFilterComponent = `
 import { Component, EventEmitter, Output } from '@angular/core';
@@ -26,8 +26,7 @@ export class {{.ComponentName | title }}Filter {
 }
 `
 
-const TemplateContenttWithDynamicFilterHtml = `
-<form class="flex justify-between" [formGroup]="form">
+const TemplateContenttWithDynamicFilterHtml = `<form class="flex justify-between" [formGroup]="form">
   <div class="w-70">
     <div class="form-control-group icon-right">
       <i

@@ -1,4 +1,4 @@
-package plantilla
+package componets_routes
 
 const TemplateContenttWithDynamicListComponent = `
 import { Component, EventEmitter, Input, Output } from '@angular/core';
@@ -33,8 +33,7 @@ export class {{.ComponentName | title }}List {
 }
 `
 
-const TemplateContenttWithDynamicListHtml = `
-<div class="flex justify-center">
+const TemplateContenttWithDynamicListHtml = `<div class="flex justify-center">
   <div class="w-full">
   </div>
 </div>
