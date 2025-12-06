@@ -6,7 +6,9 @@ import (
 	"os"
 	"strings"
 	"text/template"
-	"unicode"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 
 	"example.com/template_generate_components/plantilla"
 )
@@ -83,9 +85,11 @@ func ToTitleCase(s string) string {
 	if s == "" {
 		return s
 	}
-	runes := []rune(s)
-	runes[0] = unicode.ToUpper(runes[0])
-	return string(runes)
+	temp := strings.ReplaceAll(s, "-", " ")
+	c := cases.Title(language.English)
+	titleCase := c.String(temp)
+	result := strings.ReplaceAll(titleCase, " ", "")
+	return result
 }
 
 var componentTemplateMap = map[string]map[string]string{
